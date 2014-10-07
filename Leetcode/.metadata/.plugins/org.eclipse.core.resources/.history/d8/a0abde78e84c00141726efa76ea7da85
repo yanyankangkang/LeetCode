@@ -1,0 +1,28 @@
+package Sum_Root_to_Leaf_Numbers;
+
+public class Solution {
+	 private int sum = 0;
+	 public class TreeNode {
+		      int val;
+		      TreeNode left;
+		      TreeNode right;
+		      TreeNode(int x) { val = x; }
+		  }
+	  public int sumNumbers(TreeNode root) {
+	        dfs(root, 0);
+	        return sum;
+	    }
+	  
+	  public void dfs(TreeNode root, int number){
+		  if (root == null){
+			  sum += number;
+			  return; 
+		  }
+		  else{
+			  number = number * 10 + root.val;
+			  dfs(root.left, numeber);
+			  dfs(root.right, number);
+		  }
+		  return;
+	  }
+}

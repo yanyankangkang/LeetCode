@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;Gas_Station&apos; to &apos;leetcode5star/src&apos;&#x0A;- Original project: &apos;leetcode&apos;&#x0A;- Destination element: &apos;leetcode5star/src&apos;&#x0A;- Original element: &apos;leetcode/src/Gas_Station&apos;&#x0A;- Update references to refactored element" description="Move package" destination="=leetcode5star/src" element1="/src&lt;Gas_Station" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1410319541152" version="1.0"/>
+</session>

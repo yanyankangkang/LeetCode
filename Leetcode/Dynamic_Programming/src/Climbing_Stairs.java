@@ -1,0 +1,17 @@
+
+public class Climbing_Stairs {
+	 public int climbStairs(int n) {
+	     int [] step = new int [n + 1];
+	     step[1] = 1;
+	     step[0] = 1;
+		 for (int i = 2; i <= n; i++){
+		    step[i] += (step[i-1] + step[i-2]);
+		 }
+		 return step[n];
+	 }
+	 public static void main(String[] Args){
+		 Climbing_Stairs s = new Climbing_Stairs();
+		 System.out.print(s.climbStairs(2));
+	 }
+	 
+}
