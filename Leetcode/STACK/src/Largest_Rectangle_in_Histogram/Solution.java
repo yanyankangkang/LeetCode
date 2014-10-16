@@ -9,6 +9,9 @@ public class Solution {
 		  int length,Height;
 		  s.push(0);
 		  int Max = height[0];
+		  //maintain increasing sequence in stack, if run with element larger than current num, pop out element
+		  //else push in, every time poping out with updating max using pos of current elment substracting pos of 
+		  //seocond elemnt in stack
 		  for (int i = 1; i <= height.length; i++){          
 			  int temp = (i == height.length ? -1 : height[i]); 
 			  while (!s.empty() && height[s.peek()] > temp){
